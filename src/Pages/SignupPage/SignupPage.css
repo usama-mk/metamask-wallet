@@ -1,0 +1,195 @@
+@import url(//fonts.googleapis.com/earlyaccess/thabit.css);
+
+
+.signupPage{
+    height: 100vh;
+    background-color: #00838F;
+}
+
+.ellipse{
+    position: relative;
+    left: 58px;
+    top: 46px;
+    width: 132px;
+    height: 132px;
+    border-radius: 100px;
+    background-image: url('../../assets/logo.svg');
+    /*  *//* background-color: #005662; */
+}
+
+.content{
+    color: #FFFFFF;
+    font-family: 'Thabit', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+
+}
+.content__heading{
+    width: 721px;
+    height: 70px;
+    font-family: Thabit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+    color: #FFFFFF;
+} 
+
+.content__input> input{
+    outline-width: 0;
+    border: none;
+    padding: 5px 20px;
+    padding-bottom: 3px;
+    margin: 0 10px;
+    border-radius: 999px;
+    background-color: #005662;                     /*make RESPONSIVE*/
+    width: 577px;
+    height: 52px;
+    text-align: center;
+    font-family: 'Thabit', monospace;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 45px;
+    color: #FFFFFF;
+
+}
+
+.content__input> input::-webkit-input-placeholder { /* Edge */
+    font-family: 'Thabit', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 45px;
+    color: #FFFFFF;
+  }
+  
+  .content__input> input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: 'Thabit', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 45px;
+    color: #FFFFFF;
+  }
+  
+  .content__input> input::placeholder {
+    font-family: 'Thabit', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 45px;
+    color: #FFFFFF;
+  }
+  
+
+.connectSection{
+    position: absolute;
+    top: 543px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.content__button{
+    font-size: 34px;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background: #4FB3BF;
+    border-radius: 40px;
+    font-family: 'Thabit', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000000;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 108px;
+
+}
+
+.Modal {
+    position: absolute;
+    top: 26%;
+    left: 31%;
+    background-color: #4FB3BF;
+    width: 598px;
+    Height: 361px;
+    border-radius: 15px;
+    outline-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headingModal{
+    font-weight: 700;
+    color: #000;
+    font-size: 36px;
+    font-family: 'Thabit', monospace;
+    line-height: 48px;
+}
+
+.walletHeadingModal{
+    font-weight: 700;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Thabit', monospace;
+    margin-top: 2%;
+}
+
+ 
+.connectButtonModal{
+    font-size: 34px;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background: #005662;;
+    border-radius: 40px;
+    font-family: 'Thabit', monospace;
+    font-weight: bold;
+    color: #FFFCFC;
+    cursor: pointer;
+}
+
+.startModal{
+    display: flex;
+    margin-bottom: 63px;
+}
+
+@media screen and (max-width: 750px) {
+    .signupPage{
+        height: 200vh;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: #00838F;
+    }
+    .content{
+        margin-top: 200px;
+    }
+    .content__input> input{
+        outline-width: 0;
+        border: none;
+        padding: 5px 20px;
+        padding-bottom: 3px;
+        margin: 0 10px;
+        border-radius: 999px;
+        background-color: #005662;                     /*make RESPONSIVE*/
+        width: 277px;
+        height: 52px;
+        text-align: center;
+        font-family: 'Thabit', monospace;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 45px;
+        color: #FFFFFF;
+    
+    }
+  }
