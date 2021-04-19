@@ -1,7 +1,7 @@
 @import url(//fonts.googleapis.com/earlyaccess/thabit.css);
 
 
-.signupPage{
+.DepositFundsPage{
     height: 100vh;
     background-color: #00838F;
 }
@@ -17,7 +17,7 @@
     /*  *//* background-color: #005662; */
 }
 
-.contentSignup{
+.contentDeposit{
     color: #FFFFFF;
     font-family: 'Thabit', monospace;
     display: flex;
@@ -25,11 +25,12 @@
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+    margin-bottom: 30px;
 
 }
-.contentSignup__heading{
+.content__headingDeposit{
     width: 721px;
-    height: 70px;
+    height: 45px;
     font-family: Thabit;
     font-style: normal;
     font-weight: 500;
@@ -37,18 +38,20 @@
     line-height: 47px;
     text-align: center;
     color: #FFFFFF;
+   
 } 
 
-.contentSignup__heading>span{
+.content__headingDeposit>span{
     font-weight: 700;
 }
 
-.contentSignup__input> input{
+.content__inputDeposit> input{
     outline-width: 0;
     border: none;
     padding: 5px 20px;
     padding-bottom: 3px;
     margin: 0 10px;
+    margin-top: 20px;
     border-radius: 999px;
     background-color: #005662;                     /*make RESPONSIVE*/
     width: 577px;
@@ -62,7 +65,7 @@
 
 }
 
-.contentSignup__input> input::-webkit-input-placeholder { /* Edge */
+.content__inputDeposit> input::-webkit-input-placeholder { /* Edge */
     font-family: 'Thabit', monospace;
     font-style: normal;
     font-weight: bold;
@@ -71,7 +74,7 @@
     color: #FFFFFF;
   }
   
-  .contentSignup__input> input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  .content__inputDeposit> input:-ms-input-placeholder { /* Internet Explorer 10-11 */
     font-family: 'Thabit', monospace;
     font-style: normal;
     font-weight: bold;
@@ -80,7 +83,7 @@
     color: #FFFFFF;
   }
   
-  .contentSignup__input> input::placeholder {
+  .content__inputDeposit> input::placeholder {
     font-family: 'Thabit', monospace;
     font-style: normal;
     font-weight: bold;
@@ -90,14 +93,14 @@
   }
   
 
-.connectModalSignup{
+.connectSection{
     position: absolute;
     top: 543px;
     width: 100vw;
     display: flex;
     justify-content: center;
 }
-.contentSignup__button{
+.content__button{
     font-size: 34px;
     padding-left: 43px;
     padding-right: 43px;
@@ -115,13 +118,13 @@
 
 }
 
-.ModalSignup {
+.ModalDeposit {
     position: absolute;
     top: 26%;
     left: 31%;
     background-color: #4FB3BF;
     width: 598px;
-    Height: 361px;
+    Height: 272px;
     border-radius: 15px;
     outline-style: none;
     display: flex;
@@ -130,8 +133,17 @@
     align-items: center;
 
 }
+.Modal> div{
+    margin: 0;
+}
 
-.headingModalSignup{
+.headingModalsDeposit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingModalDeposit{
     font-weight: 700;
     color: #000;
     font-size: 36px;
@@ -139,16 +151,8 @@
     line-height: 48px;
 }
 
-.walletHeadingModalSignup{
-    font-weight: 700;
-    color: #000;
-    font-size: 14px;
-    font-family: 'Thabit', monospace;
-    margin-top: 2%;
-}
-
  
-.connectButtonModalSignup{
+.connectButtonModalDeposit{
     font-size: 34px;
     padding-left: 43px;
     padding-right: 43px;
@@ -162,23 +166,25 @@
     cursor: pointer;
 }
 
-.startModalSignup{
+.startModalDeposit{
     display: flex;
-    margin-bottom: 63px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (max-width: 750px) {
-    .signupPage{
+    .DepositFundsPage{
         height: 200vh;
         position: absolute;
         top: 0;
         bottom: 0;
         background-color: #00838F;
     }
-    .contentSignup{
+    .contentDeposit{
         margin-top: 200px;
     }
-    .contentSignup__input> input{
+    .content__inputDeposit> input{
         outline-width: 0;
         border: none;
         padding: 5px 20px;
