@@ -1,6 +1,7 @@
 import './App.css';
 import DepositFundsPage from './Pages/DepositFundsPage/DepositFundsPage';
 import LandingPage from './Pages/LandingPage/LandingPage';
+import RecipientLandingPage from './Pages/RecipientLandingPage/RecipientLandingPage';
 import SignupPage from './Pages/SignupPage/SignupPage';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       {/* <LandingPage/> */}
       {/* <SignupPage/> */}
-      <DepositFundsPage/>
+      {/* <DepositFundsPage/> */}
+      <RecipientLandingPage/>
     </div>
   );
 }
