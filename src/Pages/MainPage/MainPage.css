@@ -1,0 +1,26 @@
+.mainPage{
+    height: 100vh;
+    background-color: #00838F;
+    display: grid;
+    place-items: center;
+}
+.container{
+    display: flex;
+    margin-top: -50px;
+    width: 90vw;
+    height: 90vh;
+    box-shadow: -1px 4px 20px -6px black;
+}
+.ellipseMain{
+    margin-top: 46px; 
+    margin-left: 58px;
+    width: 132px;
+    height: 132px;
+    border-radius: 100px;
+    background-image: url('../../assets/logo.svg');
+}
+
+.leftContainer{
+    flex: 0.20;
+    border-right: 3px solid black;
+}
