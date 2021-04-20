@@ -8,7 +8,8 @@
     display: flex;
     /* padding: 20px; */
     cursor: pointer;
-    border-bottom: 1px solid #f6f6f6;
+    /* border-bottom: 1px solid #f6f6f6; */
+    margin-bottom: 6px;
    
 }
 
@@ -34,6 +35,7 @@
     line-height: 15px;
     color: #000000;
     font-family: 'Encode Sans', sans-serif;
+    margin-top: 8px;
 }
 
 .sidebarChat__info { 

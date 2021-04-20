@@ -14,7 +14,10 @@ function MainPage() {
                     <div className="ellipseMain"></div>
                     <div className="chats" >
                         <SidebarChat name="@valeriu"/>
-                        
+                        <SidebarChat name="@michael"/>
+                        <SidebarChat name="@bitcoin"/>
+                        <SidebarChat name="@vienna"/>
+
             </div>
                     <div className="currencies">
                         <CurrencyComponent />
