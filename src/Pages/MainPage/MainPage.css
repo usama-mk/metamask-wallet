@@ -3,6 +3,7 @@
     background-color: #00838F;
     display: grid;
     place-items: center;
+    overflow: hidden;
 }
 .container{
     display: flex;
@@ -10,8 +11,13 @@
     padding-top: 40px;
     width: 90vw;
     height: 90vh;
-    box-shadow: -1px 4px 20px -6px black;
+    /* box-shadow: -1px 4px 20px -6px black; */
     height: 100%;
+}
+.ellipseMainContainer{
+    width: 188px;
+    display: flex;
+    justify-content: center;
 }
 .ellipseMain{
     margin-top: 46px; 
@@ -32,22 +38,23 @@
 .leftContainer{
     height: 90%;
     flex: 0.20;
-    border-right: 3px solid black;
+    /* border-right: 3px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     margin-right: 20px;
 }
 
 .chats{
     background-color: #4FB3BF;
     flex: 1;
-    width: 100%;
+    /* width: 100%; */
     border-radius: 15px;
-    padding-top: 18px;
-    padding-left: 6px;
-    margin-bottom: 8px;
+    padding-top: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 9px;
     margin-top: 20px;
 
 }
@@ -55,7 +62,7 @@
 .midContainer{
     height: 80%;
     flex: 0.60;
-    border-right: 3px solid black;
+    /* border-right: 3px solid black; */
     display: flex;
     flex-direction: column;
     margin-right: 20px;
@@ -107,7 +114,7 @@
     background-color: #4FB3BF;
     height: 80%;
     flex: 0.20;
-    border-right: 3px solid black;
+    /* border-right: 3px solid black; */
     display: flex;
     flex-direction: column;
     margin-top: 86px;

@@ -11,7 +11,9 @@ function MainPage() {
                 {/* left Container */}
                 <div className="leftContainer">
 
+                    <div className="ellipseMainContainer">
                     <div className="ellipseMain"></div>
+                    </div>
                     <div className="chats" >
                         <SidebarChat name="@valeriu"/>
                         <SidebarChat name="@michael"/>
