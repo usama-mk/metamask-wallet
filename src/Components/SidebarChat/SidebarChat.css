@@ -1,0 +1,48 @@
+/* //applies to the whole app */
+/* *{
+    margin: 0; 
+} */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;800&display=swap');
+
+.sidebarChat {
+    display: flex;
+    /* padding: 20px; */
+    cursor: pointer;
+    border-bottom: 1px solid #f6f6f6;
+   
+}
+
+ 
+.sidebarChat:hover {
+    background-color: #ebebeb;
+}
+
+.sidebarChat__info__name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 8px;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.sidebarChat__info__message{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.sidebarChat__info {
+    margin-left: 5px;
+}
+
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #7EF6D4;
+}

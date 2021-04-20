@@ -1,5 +1,6 @@
 import React from 'react'
 import CurrencyComponent from '../../Components/Currency/CurrencyComponent'
+import SidebarChat from '../../Components/SidebarChat/SidebarChat'
 import './MainPage.css'
 
 function MainPage() {
@@ -12,7 +13,8 @@ function MainPage() {
 
                     <div className="ellipseMain"></div>
                     <div className="chats" >
-                        chats
+                        <SidebarChat name="@valeriu"/>
+                        
             </div>
                     <div className="currencies">
                         <CurrencyComponent />
