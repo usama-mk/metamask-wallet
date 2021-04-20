@@ -93,13 +93,64 @@
         padding-bottom: 3px;
         margin: 11px 10px;
         border-radius: 50px;
-        background-color: #FFFFFF;                     /*make RESPONSIVE*/
+        background-color: #FFFFFF;                
         width: 80%;
         height: 30px;
         text-align: end;
         font-family: 'Thabit', monospace;
         font-weight: 200;
         font-size: 18px;
-        line-height: 45px;
+        color: #000000;
+}
+
+.rightContainer{
+    background-color: #4FB3BF;
+    height: 80%;
+    flex: 0.20;
+    border-right: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 86px;
+    border-radius: 15px;
+}
+
+.rightContainer__configureMsg{
+    margin-top: 11px;
+}
+
+.rightContainer__configureMsg__heading{
+    font-family: 'Thabit', monospace;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.rightContainer__readReward__heading{
+    font-family: 'Thabit', monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.rightContainer__readReward__input> input{
+    outline-width: 0;
+        border: none;
+        padding: 5px 20px;
+        padding-bottom: 3px;
+        margin: 5px 10px;
+        border-radius: 50px;
+        background-color: #FFFFFF;                
+        width: 70%;
+        height: 30px;
+        text-align: end;
+        font-family: 'Thabit', monospace;
+        font-weight: 200;
+        font-size: 18px;
         color: #000000;
 }

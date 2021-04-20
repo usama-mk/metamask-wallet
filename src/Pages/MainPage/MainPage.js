@@ -37,12 +37,32 @@ function MainPage() {
             </div>
 
 {/* Right Container */}
-            <div className="rightContainer"></div>
-                    </div>
+            <div className="rightContainer">
+                <div className="rightContainer__configureMsg">
+                        <div className="rightContainer__configureMsg__heading">
+                            Configure Message
+                        </div>
+
+                        <div className="rightContainer__readReward">
+                            <div className="rightContainer__readReward__heading">
+                                read reward
+                            </div>
+                            <div className="rightContainer__readReward__input">
+                                <input/>
+                            </div>
+
+                        </div>
+                </div>
+
+                <div className="rightContainer__send">
+
+                </div>
+            </div>
+                   
 
 
 
-
+            </div>
 {/* MainPage ends */}
          </div>
     )
