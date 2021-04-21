@@ -3,6 +3,8 @@
     height: fit-content;
     /* min-height: 35px; */
     width: fit-content; /*fit content*/ /*444 111*/
+    max-width: 444px;
+    overflow-wrap: break-word;
     border-radius: 15px;
     margin: 10px 13px;
     padding: 20px;

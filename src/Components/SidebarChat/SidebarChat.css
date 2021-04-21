@@ -9,19 +9,19 @@
     /* padding: 20px; */
     cursor: pointer;
     /* border-bottom: 1px solid #f6f6f6; */
-    margin-bottom: 6px;
+    /* margin-bottom: 6px; */
 
-/*     
+    
     padding-top: 9px;
     padding-left: 12px;
     padding-right: 12px;
-    margin-bottom: 9px; */
+    margin-bottom: 9px;
    
 }
 
  
 .sidebarChat:hover {
-    background-color: #00838F;
+    background-color: rgba(196, 196, 196, 0.2);
 }
 
 .sidebarChat__info__name{
