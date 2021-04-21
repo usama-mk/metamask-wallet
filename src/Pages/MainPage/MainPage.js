@@ -6,25 +6,33 @@ import './MainPage.css'
 
 function MainPage() {
 
-    const[messages, setMessages]= useState([
-        {"message": "Hi",
-        "messageDetails": "receiver"},
-        {"message": "Hello",
-        "messageDetails": "sender"}
-         
+    const [messages, setMessages] = useState([
+        {
+            "message": "Hi",
+            "messageDetails": "receiver"
+        },
+        {
+            "message": "Hello",
+            "messageDetails": "sender"
+        }
+
     ])
-    const handleKeyDown=(e)=>{
-        var currentMessages=messages;
+
+    const handleKeyDown = (e) => {
+        var currentMessages = {};
         if (e.key === 'Enter') {
-            currentMessages.push({
+            currentMessages = {
                 "message": document.getElementById("sendMessageInput").value,
                 "messageDetails": "sender"
-            });
-            setMessages(currentMessages)
-          }
-  
-    }
+            };
+            setMessages((prev) => {
+                return [...prev, currentMessages]
+            })
 
+        }
+
+
+    }
 
     return (
         <div className="mainPage">
@@ -34,15 +42,15 @@ function MainPage() {
                 <div className="leftContainer">
 
                     <div className="ellipseMainContainer">
-                    <div className="ellipseMain"></div>
+                        <div className="ellipseMain"></div>
                     </div>
                     <div className="chats" >
-                        <SidebarChat name="@valeriu"/>
-                        <SidebarChat name="@michael"/>
-                        <SidebarChat name="@bitcoin"/>
-                        <SidebarChat name="@vienna"/>
+                        <SidebarChat name="@valeriu" />
+                        <SidebarChat name="@michael" />
+                        <SidebarChat name="@bitcoin" />
+                        <SidebarChat name="@vienna" />
 
-            </div>
+                    </div>
                     <div className="currencies">
                         <CurrencyComponent />
                     </div>
@@ -50,18 +58,18 @@ function MainPage() {
                 </div>
 
                 {/*Mid Container  */}
-                <div className="midContainer">  
+                <div className="midContainer">
                     <div className="midContainer__heading">
 
                         <div className="midContainer__headingElipse"> </div>
                     </div>
                     <div className="midContainer__body">
-                        
-                        {messages.map((message=>{
-                            return <Message message={message.message} messageSide={message.messageDetails}/>
-                        }))}  
-                         
-                </div>
+
+                        {messages.map((message => {
+                            return <Message message={message.message} messageSide={message.messageDetails} />
+                        }))}
+
+                    </div>
                     <div className="midContainer__footer">
                         <div className="midContainer__footerInput">
                             <input placeholder="write something..." onKeyDown={handleKeyDown} id="sendMessageInput" />
