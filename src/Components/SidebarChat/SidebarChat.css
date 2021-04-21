@@ -1,7 +1,4 @@
-/* //applies to the whole app */
-/* *{
-    margin: 0; 
-} */
+
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;800&display=swap');
 
 .sidebarChat {
@@ -10,26 +7,37 @@
     cursor: pointer;
     /* border-bottom: 1px solid #f6f6f6; */
     /* margin-bottom: 6px; */
-
-    
+    width: 188px;
+    color: #000000;
     padding-top: 9px;
     padding-left: 12px;
     padding-right: 12px;
-    margin-bottom: 9px;
+    margin-bottom: 0px;
+    max-width: 188px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
    
 }
 
- 
-.sidebarChat:hover {
-    background-color: rgba(196, 196, 196, 0.2);
+.senderChat{
+    background: rgba(196, 196, 196, 0.2);
 }
+.recipientChat{
+    background: #005662;
+    color: #ffffff;
+}
+
+ 
+/* .sidebarChat:hover {
+    background-color: rgba(196, 196, 196, 0.2);
+} */
 
 .sidebarChat__info__name{
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 15px;
-    color: #000000;
+    line-height: 15px; 
     margin-bottom: 8px;
     font-family: 'Encode Sans', sans-serif;
 }
@@ -39,13 +47,19 @@
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
-    color: #000000;
+    
     font-family: 'Encode Sans', sans-serif;
     margin-top: 8px;
+    /* width: min-content; */
+    max-width: 126px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .sidebarChat__info { 
-    margin-left: 5px;
+    position: relative;
+    margin-left: 50px;
 }
 
 .avatar{
@@ -53,4 +67,6 @@
     height: 40px;
     border-radius: 20px;
     background-color: #7EF6D4;
+    float: 0.4;
+    position: absolute;
 }

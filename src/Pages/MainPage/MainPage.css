@@ -115,14 +115,21 @@
         color: #000000;
 }
 
-.rightContainer{
-    background-color: #4FB3BF;
+.rightContainerWrapper{
     height: 80%;
     flex: 0.20;
-    /* border-right: 3px solid black; */
+    margin-top: 86px;
     display: flex;
     flex-direction: column;
-    margin-top: 86px;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightContainer{
+    background-color: #4FB3BF;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     border-radius: 15px;
     justify-content: space-between;
     

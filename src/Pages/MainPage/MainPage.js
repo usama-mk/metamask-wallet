@@ -45,15 +45,13 @@ function MainPage() {
                         <div className="ellipseMain"></div>
                     </div>
                     <div className="chats" >
-                        <SidebarChat name="@valeriu" />
-                        <SidebarChat name="@michael" />
-                        <SidebarChat name="@bitcoin" />
-                        <SidebarChat name="@vienna" />
+                        <SidebarChat name="@valeriu" chatDetails="senderChat" />
+                        <SidebarChat name="@michael"  chatDetails="recipientChat" />
+                        <SidebarChat name="@bitcoin" chatDetails="senderChat" />
+                        <SidebarChat name="@vienna" chatDetails="recipientChat" />
 
                     </div>
-                    <div className="currencies">
-                        <CurrencyComponent />
-                    </div>
+                   
 
                 </div>
 
@@ -78,7 +76,11 @@ function MainPage() {
                 </div>
 
                 {/* Right Container */}
-                <div className="rightContainer">
+                <div className="rightContainerWrapper">
+                <div className="currencies">
+                        <CurrencyComponent />
+                    </div>
+                    <div className="rightContainer">
                     <div className="rightContainer__configureMsg">
                         <div className="rightContainer__configureMsg__heading">
                             Configure Message
@@ -119,6 +121,8 @@ function MainPage() {
                         <div className="rightContainer__send__button">Send</div>
                     </div>
                 </div>
+                </div>
+                
 
 
 
