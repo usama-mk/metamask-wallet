@@ -5,6 +5,24 @@ import SidebarChat from '../../Components/SidebarChat/SidebarChat'
 import './MainPage.css'
 
 function MainPage() {
+    const [recentUsers, setRecentUsers]= useState([
+        {
+            name: "@valeriu", 
+            chatDetails: "senderChat"
+        },
+        {
+            name:"@michael",
+            chatDetails: "recipientChat" 
+        },
+        {
+            name:"@bitcoin",
+            chatDetails: "senderChat"
+        },
+        {
+            name:"@vienna",
+            chatDetails: "recipientChat" 
+        }
+    ]);
 
     const [messages, setMessages] = useState([
         {
@@ -17,6 +35,8 @@ function MainPage() {
         }
 
     ])
+
+    const[chatName, setChatName]= useState("");
 
     const handleKeyDown = (e) => {
         var currentMessages = {};
@@ -45,10 +65,15 @@ function MainPage() {
                         <div className="ellipseMain"></div>
                     </div>
                     <div className="chats" >
-                        <SidebarChat name="@valeriu" chatDetails="senderChat" />
-                        <SidebarChat name="@michael"  chatDetails="recipientChat" />
-                        <SidebarChat name="@bitcoin" chatDetails="senderChat" />
-                        <SidebarChat name="@vienna" chatDetails="recipientChat" />
+                        {recentUsers.map((recentUser=>{
+                            return (
+                            <div onClick={()=>setChatName(recentUser.name)}>
+                                
+                                <SidebarChat name={recentUser.name} chatDetails={recentUser.chatDetails}  />
+                                </div>
+                            );
+                             
+                        }))}
 
                     </div>
                    
@@ -59,7 +84,7 @@ function MainPage() {
                 <div className="midContainer">
                     <div className="midContainer__heading">
 
-                        <div className="midContainer__headingElipse"> </div>
+                        <div className="midContainer__headingElipse"> </div> <div className="midContainer__heading__chatName">{chatName}</div>
                     </div>
                     <div className="midContainer__body">
 

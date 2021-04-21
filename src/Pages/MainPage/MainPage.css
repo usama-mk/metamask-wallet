@@ -81,6 +81,19 @@
     padding-right: 11px;
     padding-top: 6px;
     padding-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+.midContainer__heading__chatName{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Thabit', monospace;
+    color: #FFFFFF;
 }
 
 .midContainer__body{
