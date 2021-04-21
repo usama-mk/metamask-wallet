@@ -5,23 +5,24 @@ import SidebarChat from '../../Components/SidebarChat/SidebarChat'
 import './MainPage.css'
 
 function MainPage() {
-    const [recentUsers, setRecentUsers]= useState([
+    const [recentUsers, setRecentUsers] = useState([
         {
-            name: "@valeriu", 
+            name: "@valeriu",
             chatDetails: "senderChat"
         },
         {
-            name:"@michael",
-            chatDetails: "recipientChat" 
+            name: "@michael",
+            chatDetails: "recipientChat"
         },
         {
-            name:"@bitcoin",
+            name: "@bitcoin",
             chatDetails: "senderChat"
         },
         {
-            name:"@vienna",
-            chatDetails: "recipientChat" 
-        }
+            name: "@vienna",
+            chatDetails: "recipientChat"
+        } 
+         
     ]);
 
     const [messages, setMessages] = useState([
@@ -36,7 +37,7 @@ function MainPage() {
 
     ])
 
-    const[chatName, setChatName]= useState("");
+    const [chatName, setChatName] = useState("");
 
     const handleKeyDown = (e) => {
         var currentMessages = {};
@@ -65,18 +66,24 @@ function MainPage() {
                         <div className="ellipseMain"></div>
                     </div>
                     <div className="chats" >
-                        {recentUsers.map((recentUser=>{
+                        {recentUsers.map((recentUser => {
                             return (
-                            <div onClick={()=>setChatName(recentUser.name)}>
-                                
-                                <SidebarChat name={recentUser.name} chatDetails={recentUser.chatDetails}  />
+                                <div onClick={() => setChatName(recentUser.name)}>
+
+                                    <SidebarChat name={recentUser.name} chatDetails={recentUser.chatDetails} />
                                 </div>
                             );
-                             
+
                         }))}
 
                     </div>
-                   
+
+                    <div className="newChat">
+                    <div className="newChatButton" >
+                        new chat
+                    </div>
+                    </div>
+
 
                 </div>
 
@@ -102,56 +109,56 @@ function MainPage() {
 
                 {/* Right Container */}
                 <div className="rightContainerWrapper">
-                <div className="currencies">
+                    <div className="currencies">
                         <CurrencyComponent />
                     </div>
                     <div className="rightContainer">
-                    <div className="rightContainer__configureMsg">
-                        <div className="rightContainer__configureMsg__heading">
-                            Configure Message
+                        <div className="rightContainer__configureMsg">
+                            <div className="rightContainer__configureMsg__heading">
+                                Configure Message
                         </div>
 
-                        <div className="rightContainer__readReward">
-                            <div className="rightContainer__readReward__heading">
-                                read reward
+                            <div className="rightContainer__readReward">
+                                <div className="rightContainer__readReward__heading">
+                                    read reward
                             </div>
-                            <div className="rightContainer__readReward__input">
-                                <input />
+                                <div className="rightContainer__readReward__input">
+                                    <input />
+                                </div>
+
                             </div>
+
+                            <div className="rightContainer__readReward">
+                                <div className="rightContainer__readReward__heading">
+                                    reply reward
+                            </div>
+                                <div className="rightContainer__readReward__input">
+                                    <input />
+                                </div>
+                            </div>
+
+                            <div className="rightContainer__unlockReward">
+                                <div className="rightContainer__unlockReward__heading">
+                                    unlock reward
+                            </div>
+                                <div className="rightContainer__unlockReward__input">
+                                    <input placeholder="set password" />
+                                </div>
+                            </div>
+
 
                         </div>
 
-                        <div className="rightContainer__readReward">
-                            <div className="rightContainer__readReward__heading">
-                                reply reward
-                            </div>
-                            <div className="rightContainer__readReward__input">
-                                <input />
-                            </div>
+                        <div className="rightContainer__send">
+                            <div className="rightContainer__send__button">Send</div>
                         </div>
-
-                        <div className="rightContainer__unlockReward">
-                            <div className="rightContainer__unlockReward__heading">
-                                unlock reward
-                            </div>
-                            <div className="rightContainer__unlockReward__input">
-                                <input placeholder="set password" />
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <div className="rightContainer__send">
-                        <div className="rightContainer__send__button">Send</div>
                     </div>
                 </div>
-                </div>
-                
 
 
 
 
+            {/* Container ends */}
             </div>
             {/* MainPage ends */}
         </div>

@@ -59,14 +59,15 @@
 
 .sidebarChat__info { 
     position: relative;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 .avatar{
     width: 40px;
+    min-width: 40px;
     height: 40px;
+    min-height: 40px;
     border-radius: 20px;
     background-color: #7EF6D4;
-    float: 0.4;
-    position: absolute;
+     
 }

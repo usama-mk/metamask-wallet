@@ -10,7 +10,7 @@ function SidebarChat({ id, name, chatDetails }) {
     return (
         // <Link to={`/rooms/${id}`}>
             <div className={`sidebarChat ${chatDetails}`}>
-                <div className="avatar" />
+                <div className="avatar"></div>
                 <div className="sidebarChat__info">
                     <div className="sidebarChat__info__name" >{name}</div>
                     <p className="sidebarChat__info__message">{message}</p>

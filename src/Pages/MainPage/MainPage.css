@@ -2,16 +2,12 @@
     height: 100vh;
     background-color: #00838F;
     display: grid;
-    /* place-items: center; */
     overflow: hidden;
 }
 .container{
     display: flex;
-    /* margin-top: -50px; */
-    /* padding-top: 40px; */
     width: 95vw;
     height: 95vh;
-    /* box-shadow: -1px 4px 20px -6px black; */
 }
 .ellipseMainContainer{
     width: 188px;
@@ -20,7 +16,6 @@
 }
 .ellipseMain{
     margin-top: 46px; 
-    /* margin-left: 58px; */
     width: 132px;
     height: 132px;
     border-radius: 100px;
@@ -38,12 +33,12 @@
 .leftContainer{
     height: 93%;
     flex: 0.20;
-    /* border-right: 3px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     margin-right: 20px;
+    position: relative;
 }
 
 .chats{
@@ -62,16 +57,34 @@
     margin-bottom: 9px; */
 
 }
+.newChat{
+    width: 184px;
+    text-align: center;
+}
+.newChatButton{
+    width: 165px;
+    height: 47px;
+    background: #00838F;
+    border-radius: 40px;
+    position: absolute;
+    bottom: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Thabit', monospace;
+    font-size: 24px;
+    
+}
 
 .midContainer{
     height: 80%;
     flex: 0.60;
-    /* border-right: 3px solid black; */
     display: flex;
     flex-direction: column;
     margin-right: 20px;
     margin-top: 86px;
-    /* padding-top: 48px; */
 }
 
 .midContainer__heading{
