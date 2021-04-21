@@ -1,5 +1,6 @@
 import React from 'react'
 import CurrencyComponent from '../../Components/Currency/CurrencyComponent'
+import Message from '../../Components/Message/Message'
 import SidebarChat from '../../Components/SidebarChat/SidebarChat'
 import './MainPage.css'
 
@@ -34,7 +35,8 @@ function MainPage() {
                         <div className="midContainer__headingElipse"> </div>
                     </div>
                     <div className="midContainer__body">
-                        body
+                        <Message messageSide="receiver"/>
+                        <Message messageSide="sender"/>
                 </div>
                     <div className="midContainer__footer">
                         <div className="midContainer__footerInput">

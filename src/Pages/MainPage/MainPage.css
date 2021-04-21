@@ -82,6 +82,7 @@
 .midContainer__body{
     flex: 1;
     background-color: #4F7CBF;
+    overflow: auto;
 }
 
 .midContainer__footer{
