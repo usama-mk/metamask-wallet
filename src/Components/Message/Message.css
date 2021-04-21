@@ -1,7 +1,8 @@
 .message{
     background-color: #C4E0F6;
-    height: 111px;
-    width: 444px; /*fit content*/
+    height: fit-content;
+    /* min-height: 35px; */
+    width: fit-content; /*fit content*/ /*444 111*/
     border-radius: 15px;
     margin: 10px 13px;
     padding: 20px;
@@ -22,10 +23,10 @@
     width: 0px;
     height: 0px;
     position: absolute;
-    border-left: 20px solid #ffffff;
-    border-right: 20px solid transparent;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid #ffffff;
+    border-left: 17px solid #ffffff;
+    border-right: 17px solid transparent;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid #ffffff;
     right: -13px;
     bottom: 0px;
   }
@@ -35,10 +36,10 @@
     width: 0px;
     height: 0px;
     position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid #C4E0F6;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid #C4E0F6;
+    border-left: 17px solid transparent;
+    border-right: 17px solid #C4E0F6;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid #C4E0F6;
     left: -13px;
     bottom: 0px;
   }
