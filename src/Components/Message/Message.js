@@ -1,10 +1,10 @@
 import React from 'react'
 import './Message.css'
 
-function Message({messageSide}) {
+function Message({message, messageSide}) {
     return (
         <div className={`message ${messageSide}`}>
-                
+              {message}  
         </div>
     )
 }

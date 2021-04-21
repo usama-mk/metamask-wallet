@@ -1,10 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CurrencyComponent from '../../Components/Currency/CurrencyComponent'
 import Message from '../../Components/Message/Message'
 import SidebarChat from '../../Components/SidebarChat/SidebarChat'
 import './MainPage.css'
 
 function MainPage() {
+
+    const[messages, setMessages]= useState([
+        {"message": "Hi",
+        "messageDetails": "receiver"},
+        {"message": "Hello",
+        "messageDetails": "sender"}
+         
+    ])
+    const handleKeyDown=(e)=>{
+        var currentMessages=messages;
+        if (e.key === 'Enter') {
+            currentMessages.push({
+                "message": document.getElementById("sendMessageInput").value,
+                "messageDetails": "sender"
+            });
+            setMessages(currentMessages)
+          }
+  
+    }
+
+
     return (
         <div className="mainPage">
 
@@ -29,18 +50,21 @@ function MainPage() {
                 </div>
 
                 {/*Mid Container  */}
-                <div className="midContainer">
+                <div className="midContainer">  
                     <div className="midContainer__heading">
 
                         <div className="midContainer__headingElipse"> </div>
                     </div>
                     <div className="midContainer__body">
-                        <Message messageSide="receiver"/>
-                        <Message messageSide="sender"/>
+                        
+                        {messages.map((message=>{
+                            return <Message message={message.message} messageSide={message.messageDetails}/>
+                        }))}  
+                         
                 </div>
                     <div className="midContainer__footer">
                         <div className="midContainer__footerInput">
-                            <input placeholder="write something..." />
+                            <input placeholder="write something..." onKeyDown={handleKeyDown} id="sendMessageInput" />
                         </div>
                     </div>
                 </div>

@@ -1,13 +1,13 @@
 .message{
     background-color: #C4E0F6;
     height: 111px;
-    width: 444px;
+    width: 444px; /*fit content*/
     border-radius: 15px;
     margin: 10px 13px;
     padding: 20px;
     /* text-align: center; */
     font-weight: 900;
-    color: #fff;
+    color: #000000;
     font-family: 'Thabit', monospace;
     position: relative;
 }
