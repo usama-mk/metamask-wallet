@@ -1,12 +1,12 @@
 @import url(//fonts.googleapis.com/earlyaccess/thabit.css);
 
 
-.landingPageRecipient{
+.landingPageRecipient {
     height: 100vh;
     background-color: #00838F;
 }
 
-.ellipse{
+.ellipse {
     position: relative;
     left: 58px;
     top: 46px;
@@ -14,11 +14,11 @@
     height: 132px;
     border-radius: 100px;
     background-image: url('../../assets/logo.svg');
-    /*  *//* background-color: #005662; */
+    /* background-color: #005662; */
 }
 
-.headingRecipient{
-    
+.headingRecipient {
+
     color: #FFFFFF;
     font-size: 48px;
     font-weight: 700;
@@ -33,7 +33,8 @@
     width: 721px;
 
 }
-.subHeadingRecipient{
+
+.subHeadingRecipient {
     /* position: absolute; */
     top: 43px;
     left: 58px;
@@ -44,12 +45,13 @@
     font-family: 'Thabit', monospace;
     color: #FFFFFF;
     font-style: normal;
-} 
-.bold{
+}
+
+.bold {
     font-weight: 700;
 }
 
-.walletHeadingRecipient{
+.walletHeadingRecipient {
     position: absolute;
     /* width: 257px; */
     height: 68px;
@@ -67,14 +69,15 @@
     color: #FFFFFF;
 }
 
-.connectSectionRecipient{
+.connectSectionRecipient {
     position: absolute;
     top: 543px;
     width: 100vw;
     display: flex;
     justify-content: center;
 }
-.connectButtonRecipient{
+
+.connectButtonRecipient {
     font-size: 34px;
     padding-left: 43px;
     padding-right: 43px;
@@ -104,7 +107,7 @@
 
 }
 
-.headingModalRecipient{
+.headingModalRecipient {
     font-weight: 700;
     color: #000;
     font-size: 36px;
@@ -112,7 +115,7 @@
     line-height: 48px;
 }
 
-.walletHeadingModalRecipient{
+.walletHeadingModalRecipient {
     font-weight: 700;
     color: #000;
     font-size: 14px;
@@ -120,23 +123,25 @@
     margin-top: 2%;
 }
 
- 
-.connectButtonModalRecipient{
+
+.connectButtonModalRecipient {
     font-size: 34px;
     padding-left: 43px;
     padding-right: 43px;
     padding-top: 13px;
     padding-bottom: 13px;
-    background: #005662;;
+    background: #005662;
+    ;
     border-radius: 40px;
     font-family: 'Thabit', monospace;
     font-weight: bold;
     color: #FFFCFC;
     cursor: pointer;
 }
+
 @media screen and (max-width: 680px) {
-    .headingRecipient{
-    
+    .headingRecipient {
+
         color: #FFFFFF;
         font-size: 28px;
         font-weight: 700;
@@ -149,9 +154,10 @@
         top: 224px;
         left: 58px;
         width: 200px;
-    
+
     }
-    .subHeadingRecipient{
+
+    .subHeadingRecipient {
         /* position: absolute; */
         top: 43px;
         left: 58px;
@@ -162,9 +168,9 @@
         font-family: 'Thabit', monospace;
         color: #FFFFFF;
         font-style: normal;
-    } 
+    }
 
-    .connectButtonRecipient{
+    .connectButtonRecipient {
         font-size: 20px;
         padding-left: 30px;
         padding-right: 30px;
@@ -175,51 +181,54 @@
         font-family: 'Thabit', monospace;
         font-weight: bold;
         cursor: pointer;
-    
+
     }
+
     .ModalRecipient {
         position: absolute;
         top: 26%;
         left: 17%;
         background-color: #4FB3BF;
         width: 240px;
-        Height:270px;
+        Height: 270px;
         border-radius: 15px;
         outline-style: none;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+
     }
-    .headingModalRecipient{
+
+    .headingModalRecipient {
         font-weight: 700;
         color: #000;
         font-size: 18px;
         font-family: 'Thabit', monospace;
-       
+
     }
-    
-    .walletHeadingModalRecipient{
+
+    .walletHeadingModalRecipient {
         font-weight: 700;
         color: #000;
         font-size: 12px;
         font-family: 'Thabit', monospace;
         margin-top: 2%;
     }
-    
-     
-    .connectButtonModalRecipient{
+
+
+    .connectButtonModalRecipient {
         font-size: 10px;
         padding-left: 30px;
         padding-right: 30px;
         padding-top: 13px;
         padding-bottom: 13px;
-        background: #005662;;
+        background: #005662;
+        ;
         border-radius: 40px;
         font-family: 'Thabit', monospace;
         font-weight: bold;
         color: #FFFCFC;
         cursor: pointer;
     }
-  }
+}

@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;800&display=swap');
 
 .sidebarChat {
@@ -17,37 +16,38 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-   
+
 }
 
-.senderChat{
+.senderChat {
     background: rgba(196, 196, 196, 0.2);
 }
-.recipientChat{
+
+.recipientChat {
     background: #005662;
     color: #ffffff;
 }
 
- 
+
 /* .sidebarChat:hover {
     background-color: rgba(196, 196, 196, 0.2);
 } */
 
-.sidebarChat__info__name{
+.sidebarChat__info__name {
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 15px; 
+    line-height: 15px;
     margin-bottom: 8px;
     font-family: 'Encode Sans', sans-serif;
 }
 
-.sidebarChat__info__message{
+.sidebarChat__info__message {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
-    
+
     font-family: 'Encode Sans', sans-serif;
     margin-top: 8px;
     /* width: min-content; */
@@ -57,17 +57,17 @@
     text-overflow: ellipsis;
 }
 
-.sidebarChat__info { 
+.sidebarChat__info {
     position: relative;
     margin-left: 10px;
 }
 
-.avatar{
+.avatar {
     width: 40px;
     min-width: 40px;
     height: 40px;
     min-height: 40px;
     border-radius: 20px;
     background-color: #7EF6D4;
-     
+
 }

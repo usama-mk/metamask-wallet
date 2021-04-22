@@ -1,12 +1,12 @@
 @import url(//fonts.googleapis.com/earlyaccess/thabit.css);
 
 
-.DepositFundsPage{
+.DepositFundsPage {
     height: 100vh;
     background-color: #00838F;
 }
 
-.ellipse{
+.ellipse {
     position: relative;
     left: 58px;
     top: 46px;
@@ -14,10 +14,10 @@
     height: 132px;
     border-radius: 100px;
     background-image: url('../../assets/logo.svg');
-    /*  *//* background-color: #005662; */
+    /* background-color: #005662; */
 }
 
-.contentDeposit{
+.contentDeposit {
     color: #FFFFFF;
     font-family: 'Thabit', monospace;
     display: flex;
@@ -28,7 +28,8 @@
     margin-bottom: 30px;
 
 }
-.content__headingDeposit{
+
+.content__headingDeposit {
     width: 721px;
     height: 45px;
     font-family: Thabit;
@@ -38,14 +39,14 @@
     line-height: 47px;
     text-align: center;
     color: #FFFFFF;
-   
-} 
 
-.content__headingDeposit>span{
+}
+
+.content__headingDeposit>span {
     font-weight: 700;
 }
 
-.content__inputDeposit> input{
+.content__inputDeposit>input {
     outline-width: 0;
     border: none;
     padding: 5px 20px;
@@ -53,7 +54,7 @@
     margin: 0 10px;
     margin-top: 20px;
     border-radius: 999px;
-    background-color: #005662;                     /*make RESPONSIVE*/
+    background-color: #005662;
     width: 577px;
     height: 52px;
     text-align: center;
@@ -65,42 +66,45 @@
 
 }
 
-.content__inputDeposit> input::-webkit-input-placeholder { /* Edge */
+.content__inputDeposit>input::-webkit-input-placeholder {
+    /* Edge */
     font-family: 'Thabit', monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 34px;
     line-height: 45px;
     color: #FFFFFF;
-  }
-  
-  .content__inputDeposit> input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    font-family: 'Thabit', monospace;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 45px;
-    color: #FFFFFF;
-  }
-  
-  .content__inputDeposit> input::placeholder {
-    font-family: 'Thabit', monospace;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 45px;
-    color: #FFFFFF;
-  }
-  
+}
 
-.connectSection{
+.content__inputDeposit>input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-family: 'Thabit', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.content__inputDeposit>input::placeholder {
+    font-family: 'Thabit', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+
+.connectSection {
     position: absolute;
     top: 543px;
     width: 100vw;
     display: flex;
     justify-content: center;
 }
-.content__button{
+
+.content__button {
     font-size: 34px;
     padding-left: 43px;
     padding-right: 43px;
@@ -133,17 +137,18 @@
     align-items: center;
 
 }
-.Modal> div{
+
+.Modal>div {
     margin: 0;
 }
 
-.headingModalsDeposit{
+.headingModalsDeposit {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.headingModalDeposit{
+.headingModalDeposit {
     font-weight: 700;
     color: #000;
     font-size: 36px;
@@ -151,14 +156,15 @@
     line-height: 48px;
 }
 
- 
-.connectButtonModalDeposit{
+
+.connectButtonModalDeposit {
     font-size: 34px;
     padding-left: 43px;
     padding-right: 43px;
     padding-top: 13px;
     padding-bottom: 13px;
-    background: #005662;;
+    background: #005662;
+    ;
     border-radius: 40px;
     font-family: 'Thabit', monospace;
     font-weight: bold;
@@ -166,7 +172,7 @@
     cursor: pointer;
 }
 
-.startModalDeposit{
+.startModalDeposit {
     display: flex;
     margin-bottom: 20px;
     flex-direction: column;
@@ -174,24 +180,26 @@
 }
 
 @media screen and (max-width: 750px) {
-    .DepositFundsPage{
+    .DepositFundsPage {
         height: 200vh;
         position: absolute;
         top: 0;
         bottom: 0;
         background-color: #00838F;
     }
-    .contentDeposit{
+
+    .contentDeposit {
         margin-top: 200px;
     }
-    .content__inputDeposit> input{
+
+    .content__inputDeposit>input {
         outline-width: 0;
         border: none;
         padding: 5px 20px;
         padding-bottom: 3px;
         margin: 0 10px;
         border-radius: 999px;
-        background-color: #005662;                     /*make RESPONSIVE*/
+        background-color: #005662;
         width: 277px;
         height: 52px;
         text-align: center;
@@ -200,6 +208,6 @@
         font-size: 34px;
         line-height: 45px;
         color: #FFFFFF;
-    
+
     }
-  }
+}

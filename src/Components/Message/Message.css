@@ -1,8 +1,10 @@
-.message{
+.message {
     background-color: #C4E0F6;
     height: fit-content;
     /* min-height: 35px; */
-    width: fit-content; /*fit content*/ /*444 111*/
+    width: fit-content;
+    /*fit content*/
+    /*444 111*/
     max-width: 444px;
     overflow-wrap: break-word;
     border-radius: 15px;
@@ -15,7 +17,7 @@
     position: relative;
 }
 
-.sender{
+.sender {
     margin-left: auto;
     background-color: white;
 }
@@ -31,9 +33,9 @@
     border-bottom: 17px solid #ffffff;
     right: -13px;
     bottom: 0px;
-  }
-  
-  .receiver:before {
+}
+
+.receiver:before {
     content: "";
     width: 0px;
     height: 0px;
@@ -44,6 +46,4 @@
     border-bottom: 17px solid #C4E0F6;
     left: -13px;
     bottom: 0px;
-  }
-  
-  
+}

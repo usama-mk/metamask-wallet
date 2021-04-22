@@ -1,12 +1,12 @@
 @import url(//fonts.googleapis.com/earlyaccess/thabit.css);
 
 
-.landingPage{
+.landingPage {
     height: 100vh;
     background-color: #00838F;
 }
 
-.ellipse{
+.ellipse {
     position: relative;
     left: 58px;
     top: 46px;
@@ -14,24 +14,23 @@
     height: 132px;
     border-radius: 100px;
     background-image: url('../../assets/logo.svg');
-    /*  *//* background-color: #005662; */
+    /* background-color: #005662; */
 }
 
-.heading{
+.heading {
     color: #FFFFFF;
     font-size: 48px;
     font-weight: 700;
     height: 70px;
     font-family: 'Thabit', monospace;
     line-height: 63.47px;
-    /* margin-top: 224px;
-    margin-left: 58px; */
     position: fixed;
     top: 224px;
     left: 58px;
 
 }
-.subHeading{
+
+.subHeading {
     /* position: absolute; */
     display: flex;
     top: 43px;
@@ -43,9 +42,9 @@
     font-family: 'Thabit', monospace;
     color: #FFFFFF;
     font-style: normal;
-} 
+}
 
-.walletHeading{
+.walletHeading {
     position: absolute;
     /* width: 257px; */
     height: 68px;
@@ -63,14 +62,15 @@
     color: #FFFFFF;
 }
 
-.connectSection{
+.connectSection {
     position: absolute;
     top: 543px;
     width: 100vw;
     display: flex;
     justify-content: center;
 }
-.connectButton{
+
+.connectButton {
     font-size: 34px;
     padding-left: 43px;
     padding-right: 43px;
@@ -100,7 +100,7 @@
 
 }
 
-.headingModal{
+.headingModal {
     font-weight: 700;
     color: #000;
     font-size: 36px;
@@ -108,7 +108,7 @@
     line-height: 48px;
 }
 
-.walletHeadingModal{
+.walletHeadingModal {
     font-weight: 700;
     color: #000;
     font-size: 14px;
@@ -116,14 +116,14 @@
     margin-top: 2%;
 }
 
- 
-.connectButtonModal{
+
+.connectButtonModal {
     font-size: 34px;
     padding-left: 43px;
     padding-right: 43px;
     padding-top: 13px;
     padding-bottom: 13px;
-    background: #005662;;
+    background: #005662;
     border-radius: 40px;
     font-family: 'Thabit', monospace;
     font-weight: bold;

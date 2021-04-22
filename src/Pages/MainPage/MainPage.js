@@ -21,8 +21,8 @@ function MainPage() {
         {
             name: "@vienna",
             chatDetails: "recipientChat"
-        } 
-         
+        }
+
     ]);
 
     const [messages, setMessages] = useState([
@@ -35,11 +35,26 @@ function MainPage() {
             "messageDetails": "sender"
         }
 
-    ])
+    ]);
 
     const [chatName, setChatName] = useState("");
+    const [readReward, setReadReward] = useState("");
+    const [replyReward, setReplyReward] = useState("");
+    const [unlockReward, setUnlockReward] = useState("");
 
-    const handleNewChat=()=>{
+    const handleReadRewardInput = (e) => {
+        setReadReward(e.target.value)
+    }
+
+    const handleReplyRewardInput = (e) => {
+        setReplyReward(e.target.value)
+    }
+
+    const handleUnlockRewardInput = (e) => {
+        setUnlockReward(e.target.value)
+    }
+
+    const handleNewChat = () => {
         window.location.reload();
     }
 
@@ -53,7 +68,7 @@ function MainPage() {
             setMessages((prev) => {
                 return [...prev, currentMessages]
             })
-            document.getElementById("sendMessageInput").value=""
+            document.getElementById("sendMessageInput").value = ""
         }
 
 
@@ -83,8 +98,8 @@ function MainPage() {
                     </div>
 
                     <div className="newChat">
-                    <div className="newChatButton" onClick={handleNewChat} >
-                        new chat
+                        <div className="newChatButton" onClick={handleNewChat} >
+                            new chat
                     </div>
                     </div>
 
@@ -127,7 +142,7 @@ function MainPage() {
                                     read reward
                             </div>
                                 <div className="rightContainer__readReward__input">
-                                    <input />
+                                    <input onChange={handleReadRewardInput} value={readReward} />
                                 </div>
 
                             </div>
@@ -137,7 +152,7 @@ function MainPage() {
                                     reply reward
                             </div>
                                 <div className="rightContainer__readReward__input">
-                                    <input />
+                                    <input onChange={handleReplyRewardInput} value={replyReward} />
                                 </div>
                             </div>
 
@@ -146,7 +161,7 @@ function MainPage() {
                                     unlock reward
                             </div>
                                 <div className="rightContainer__unlockReward__input">
-                                    <input placeholder="set password" />
+                                    <input placeholder="set password" onChange={handleUnlockRewardInput} value={unlockReward} />
                                 </div>
                             </div>
 
@@ -162,7 +177,7 @@ function MainPage() {
 
 
 
-            {/* Container ends */}
+                {/* Container ends */}
             </div>
             {/* MainPage ends */}
         </div>

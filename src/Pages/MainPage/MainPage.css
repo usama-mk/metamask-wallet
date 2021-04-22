@@ -1,21 +1,24 @@
-.mainPage{
+.mainPage {
     height: 100vh;
     background-color: #00838F;
     display: grid;
     overflow: hidden;
 }
-.container{
+
+.container {
     display: flex;
     width: 95vw;
     height: 95vh;
 }
-.ellipseMainContainer{
+
+.ellipseMainContainer {
     width: 188px;
     display: flex;
     justify-content: center;
 }
-.ellipseMain{
-    margin-top: 46px; 
+
+.ellipseMain {
+    margin-top: 46px;
     width: 132px;
     height: 132px;
     border-radius: 100px;
@@ -23,14 +26,15 @@
     align-self: flex-start;
 }
 
-.midContainer__headingElipse{
-    background-color: #005662;;
+.midContainer__headingElipse {
+    background-color: #005662;
+    ;
     border-radius: 100px;
     width: 40px;
     height: 40px;
 }
 
-.leftContainer{
+.leftContainer {
     height: 93%;
     flex: 0.20;
     display: flex;
@@ -41,7 +45,7 @@
     position: relative;
 }
 
-.chats{
+.chats {
     background-color: #4FB3BF;
     flex: 1;
     /* width: 100%; */
@@ -57,11 +61,13 @@
     margin-bottom: 9px; */
 
 }
-.newChat{
+
+.newChat {
     width: 184px;
     text-align: center;
 }
-.newChatButton{
+
+.newChatButton {
     width: 165px;
     height: 47px;
     background: #00838F;
@@ -76,10 +82,10 @@
     font-family: 'Thabit', monospace;
     font-size: 24px;
     font-weight: 700;
-    
+
 }
 
-.midContainer{
+.midContainer {
     height: 80%;
     flex: 0.60;
     display: flex;
@@ -88,7 +94,7 @@
     margin-top: 86px;
 }
 
-.midContainer__heading{
+.midContainer__heading {
     background-color: #4FB3BF;
     border-radius: 15px 15px 0px 0px;
     padding-left: 11px;
@@ -98,7 +104,8 @@
     display: flex;
     align-items: center;
 }
-.midContainer__heading__chatName{
+
+.midContainer__heading__chatName {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -110,40 +117,42 @@
     color: #FFFFFF;
 }
 
-.midContainer__body{
+.midContainer__body {
     flex: 1;
     background-color: #4F7CBF;
     overflow: auto;
 }
 
 
-.midContainer__footer{
+.midContainer__footer {
     background-color: #4FB3BF;
     border-radius: 0px 0px 15px 15px;
 }
-.midContainer__footerInput{
+
+.midContainer__footerInput {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.midContainer__footerInput> input{
-        outline-width: 0;
-        border: none;
-        padding: 5px 20px;
-        padding-bottom: 3px;
-        margin: 11px 10px;
-        border-radius: 50px;
-        background-color: #FFFFFF;                
-        width: 80%;
-        height: 30px;
-        text-align: end;
-        font-family: 'Thabit', monospace;
-        font-weight: 200;
-        font-size: 18px;
-        color: #000000;
+
+.midContainer__footerInput>input {
+    outline-width: 0;
+    border: none;
+    padding: 5px 20px;
+    padding-bottom: 3px;
+    margin: 11px 10px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    width: 80%;
+    height: 30px;
+    text-align: end;
+    font-family: 'Thabit', monospace;
+    font-weight: 200;
+    font-size: 18px;
+    color: #000000;
 }
 
-.rightContainerWrapper{
+.rightContainerWrapper {
     height: 80%;
     flex: 0.20;
     margin-top: 86px;
@@ -152,7 +161,8 @@
     justify-content: space-between;
     align-items: center;
 }
-.rightContainer{
+
+.rightContainer {
     background-color: #4FB3BF;
     margin-top: 60px;
     display: flex;
@@ -160,14 +170,14 @@
     flex: 1;
     border-radius: 15px;
     justify-content: space-between;
-    
+
 }
 
-.rightContainer__configureMsg{
+.rightContainer__configureMsg {
     margin-top: 11px;
 }
 
-.rightContainer__configureMsg__heading{
+.rightContainer__configureMsg__heading {
     font-family: 'Thabit', monospace;
     font-weight: bold;
     font-size: 24px;
@@ -177,7 +187,7 @@
     margin: 11px 10%;
 }
 
-.rightContainer__readReward__heading{
+.rightContainer__readReward__heading {
     font-family: 'Thabit', monospace;
     font-style: normal;
     font-weight: 500;
@@ -188,24 +198,24 @@
     margin-top: 10px;
 }
 
-.rightContainer__readReward__input> input{
+.rightContainer__readReward__input>input {
     outline-width: 0;
-        border: none;
-        padding: 5px 20px;
-        padding-bottom: 3px;
-        margin: 5px 10px;
-        border-radius: 50px;
-        background-color: #FFFFFF;                
-        width: 78%;
-        height: 30px;
-        text-align: center;
-        font-family: 'Thabit', monospace;
-        font-weight: 200;
-        font-size: 18px;
-        color: #000000;
+    border: none;
+    padding: 5px 20px;
+    padding-bottom: 3px;
+    margin: 5px 10px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    width: 78%;
+    height: 30px;
+    text-align: center;
+    font-family: 'Thabit', monospace;
+    font-weight: 200;
+    font-size: 18px;
+    color: #000000;
 }
 
-.rightContainer__unlockReward__heading{
+.rightContainer__unlockReward__heading {
     font-family: 'Thabit', monospace;
     font-style: normal;
     font-weight: 500;
@@ -216,24 +226,24 @@
     margin-top: 10px;
 }
 
-.rightContainer__unlockReward__input> input{
+.rightContainer__unlockReward__input>input {
     outline-width: 0;
-        border: none;
-        padding: 5px 20px;
-        padding-bottom: 3px;
-        margin: 5px 10px;
-        border-radius: 50px;
-        background-color: #FFFFFF;                
-        width: 78%;
-        height: 30px;
-        text-align: center;
-        font-family: 'Thabit', monospace;
-        font-weight: 200;
-        font-size: 18px;
-        color: #000000;
+    border: none;
+    padding: 5px 20px;
+    padding-bottom: 3px;
+    margin: 5px 10px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    width: 78%;
+    height: 30px;
+    text-align: center;
+    font-family: 'Thabit', monospace;
+    font-weight: 200;
+    font-size: 18px;
+    color: #000000;
 }
 
-.rightContainer__send{
+.rightContainer__send {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -241,7 +251,7 @@
     margin-bottom: 18px;
 }
 
-.rightContainer__send__button{
+.rightContainer__send__button {
     background: #00838F;
     border-radius: 40px;
     font-style: normal;

@@ -1,5 +1,5 @@
-.currencyComponent{
-    background-color:#005662;
+.currencyComponent {
+    background-color: #005662;
     width: 188px;
     height: 49px;
     border-radius: 15px;
@@ -9,7 +9,7 @@
     color: #FFFFFF;
 }
 
-.currencyData{
+.currencyData {
     width: 122.69px;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
     line-height: 18px;
 }
 
-.currencyLogo{
+.currencyLogo {
     padding-top: 8px;
     padding-bottom: 8px;
 }
