@@ -2,9 +2,18 @@ import React, { useState } from 'react'
 import Modal from 'react-modal'
 import './LandingPage.css'
 import modalLogo from '../../assets/modalLogo.svg';
+import { useHistory } from "react-router-dom";
 
 function LandingPage() {
     const[modalIsOpen, setModalIsOpen]= useState(false);
+    let history = useHistory();
+    const connectWallet=()=>{
+        
+        if("user"){     //connected successfully(Backend-work)
+            // window.location.assign("/signup")
+             history.push("/signup")
+        }
+    }
     return (
         <div className="landingPage">
             <div className="ellipse">
@@ -38,7 +47,7 @@ function LandingPage() {
                 connect wallet to get started
                 </div>
                    <div className="connectSectionModal" >
-                <div className="connectButtonModal" >
+                <div className="connectButtonModal" onClick={connectWallet} >
                     Connect
                 </div>
                 </div>

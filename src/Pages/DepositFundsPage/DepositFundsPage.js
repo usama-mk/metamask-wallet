@@ -2,9 +2,26 @@ import React, { useState } from 'react'
 import './DepositFundsPage.css'
 import Modal from 'react-modal'
 import exclamatoryLogo from '../../assets/exclamatory.svg'
+import { useHistory } from "react-router-dom";
 
 function DepositFundsPage() {
     const[modalIsOpen, setModalIsOpen]= useState(false);
+    const[bnbInput, setBnbInput]= useState("");
+    var history= useHistory();
+
+    const handleBnbInput = (e)=>{
+        setBnbInput(e.target.value); 
+   }
+
+   const handleDeposit=()=>{
+       if(bnbInput<0.01){
+         setModalIsOpen(true)
+       }
+       else{
+        //    window.location.assign("/mainpage")
+        history.push("/mainpage")
+       }
+   }
     return (
         <div className="DepositFundsPage">
         <div className="ellipse">
@@ -16,9 +33,9 @@ function DepositFundsPage() {
            </div>
            <div className="content__subHeading">0.01 BNB minimum to prevent spam</div>
             <div className="content__inputDeposit">
-           <input placeholder="0.01" />
+           <input placeholder="0.01"onChange={handleBnbInput} value={bnbInput} />
             </div>
-            <div onClick={()=> setModalIsOpen(true)} className="content__button" >
+            <div onClick={handleDeposit} className="content__button" >
                 Deposit
             </div>
         </div>

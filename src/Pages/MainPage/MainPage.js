@@ -39,6 +39,10 @@ function MainPage() {
 
     const [chatName, setChatName] = useState("");
 
+    const handleNewChat=()=>{
+        window.location.reload();
+    }
+
     const handleKeyDown = (e) => {
         var currentMessages = {};
         if (e.key === 'Enter') {
@@ -49,7 +53,7 @@ function MainPage() {
             setMessages((prev) => {
                 return [...prev, currentMessages]
             })
-
+            document.getElementById("sendMessageInput").value=""
         }
 
 
@@ -79,7 +83,7 @@ function MainPage() {
                     </div>
 
                     <div className="newChat">
-                    <div className="newChatButton" >
+                    <div className="newChatButton" onClick={handleNewChat} >
                         new chat
                     </div>
                     </div>

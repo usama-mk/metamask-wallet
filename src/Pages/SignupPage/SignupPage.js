@@ -2,11 +2,30 @@ import React, { useState } from 'react'
 import './SignupPage.css'
 import Modal from 'react-modal'
 import exclamatoryLogo from '../../assets/exclamatory.svg'
+import { useHistory } from "react-router-dom";
+
 
 
 
 function SignupPage() {
     const[modalIsOpen, setModalIsOpen]= useState(false);
+    const[username, setUsername]= useState("");
+    let history = useHistory();
+    const handleUsername = (e)=>{
+        setUsername(e.target.value); 
+   }
+
+   const handleSignup= ()=>{
+    var letters = /^[0-9a-zA-Z-@]+$/;
+    if(username.match(letters) && username.charAt(0)=="@" && username.charAt(1)){
+       setUsername("")
+    //    window.location.assign("/depositfunds")
+          history.push("depositfunds")
+    }
+    else{
+        setModalIsOpen(true)
+    }
+   }
     return (
         <div className="signupPage">
             <div className="ellipse">
@@ -17,9 +36,9 @@ function SignupPage() {
                Choose a <span>username</span> 
                </div>
                 <div className="contentSignup__input">
-               <input placeholder="@username" />
+               <input placeholder="@username" onChange={handleUsername} value={username} />
                 </div>
-                <div onClick={()=> setModalIsOpen(true)} className="contentSignup__button" >
+                <div className="contentSignup__button" onClick={handleSignup} >
                     Signup
                 </div>
             </div>

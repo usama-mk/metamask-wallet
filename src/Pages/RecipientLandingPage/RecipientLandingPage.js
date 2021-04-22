@@ -2,9 +2,16 @@ import React, { useState } from 'react'
 import './RecipientLandingPage.css'
 import Modal from 'react-modal'
 import modalLogo from '../../assets/modalLogo.svg';
+import { useHistory } from "react-router-dom";
+
 
 function RecipientLandingPage() {
     const[modalIsOpen, setModalIsOpen]= useState(false);
+    var history= useHistory();
+    
+    const connectWallet=()=>{
+        history.push("/signup")
+    }
     return (
         <div className="landingPageRecipient">
         <div className="ellipse">
@@ -38,7 +45,7 @@ function RecipientLandingPage() {
             connect wallet to get started
             </div>
                <div className="connectSectionModalRecipient" >
-            <div className="connectButtonModalRecipient" >
+            <div className="connectButtonModalRecipient" onClick={connectWallet} >
                 Connect
             </div>
             </div>
