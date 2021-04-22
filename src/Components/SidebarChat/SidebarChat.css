@@ -6,13 +6,13 @@
     cursor: pointer;
     /* border-bottom: 1px solid #f6f6f6; */
     /* margin-bottom: 6px; */
-    width: 175px;
+    width: 185px;
     color: #000000;
     padding-top: 9px;
     padding-left: 12px;
     padding-right: 12px;
     margin-bottom: 0px;
-    max-width: 175px;
+    max-width: 185px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

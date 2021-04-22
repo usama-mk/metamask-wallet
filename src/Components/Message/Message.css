@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;800&display=swap');
+
 .message {
     background-color: #C4E0F6;
     height: fit-content;
@@ -13,13 +15,16 @@
     /* text-align: center; */
     font-weight: 900;
     color: #000000;
-    font-family: 'Thabit', monospace;
     position: relative;
 }
 
 .sender {
     margin-left: auto;
     background-color: white;
+    font-family: 'Thabit', monospace;
+}
+.receiver{
+    font-family: 'Encode Sans', sans-serif;
 }
 
 .sender:before {
@@ -33,6 +38,7 @@
     border-bottom: 17px solid #ffffff;
     right: -13px;
     bottom: 0px;
+
 }
 
 .receiver:before {
@@ -46,4 +52,5 @@
     border-bottom: 17px solid #C4E0F6;
     left: -13px;
     bottom: 0px;
+    
 }

@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import CurrencyComponent from '../../Components/Currency/CurrencyComponent'
 import Message from '../../Components/Message/Message'
 import SidebarChat from '../../Components/SidebarChat/SidebarChat'
+import Modal from 'react-modal'
+import modalLogo from '../../assets/balanceLogo.svg'
+import copySvg from '../../assets/copy.svg'
 import './MainPage.css'
 
 function MainPage() {
@@ -40,7 +43,12 @@ function MainPage() {
     const [chatName, setChatName] = useState("");
     const [readReward, setReadReward] = useState("");
     const [replyReward, setReplyReward] = useState("");
-    const [unlockReward, setUnlockReward] = useState("");
+    const [icebreaker, setIcebreaker] = useState("");
+    const [userBnb, setuserBnb] = useState("0.05");
+    const [userUsd, setUserUsd] = useState("25");
+    const [link, setlink] = useState("http://icebreaker.money/1derw32d");
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [linkPopUp, setLinkPopUp] = useState(false);
 
     const handleReadRewardInput = (e) => {
         setReadReward(e.target.value)
@@ -50,8 +58,8 @@ function MainPage() {
         setReplyReward(e.target.value)
     }
 
-    const handleUnlockRewardInput = (e) => {
-        setUnlockReward(e.target.value)
+    const handleIceBreakerInput = (e) => {
+        setIcebreaker(e.target.value)
     }
 
     const handleNewChat = () => {
@@ -128,7 +136,7 @@ function MainPage() {
 
                 {/* Right Container */}
                 <div className="rightContainerWrapper">
-                    <div className="currencies">
+                    <div className="currencies" onClick={() => setModalIsOpen(true)}>
                         <CurrencyComponent />
                     </div>
                     <div className="rightContainer">
@@ -158,10 +166,10 @@ function MainPage() {
 
                             <div className="rightContainer__unlockReward">
                                 <div className="rightContainer__unlockReward__heading">
-                                    unlock reward
+                                    icebreaker
                             </div>
                                 <div className="rightContainer__unlockReward__input">
-                                    <input placeholder="set password" onChange={handleUnlockRewardInput} value={unlockReward} />
+                                    <input placeholder="set password" onChange={handleIceBreakerInput} value={icebreaker} />
                                 </div>
                             </div>
 
@@ -169,7 +177,7 @@ function MainPage() {
                         </div>
 
                         <div className="rightContainer__send">
-                            <div className="rightContainer__send__button">Send</div>
+                            <div className="rightContainer__send__button" onClick={()=> setLinkPopUp(true)} >Send</div>
                         </div>
                     </div>
                 </div>
@@ -179,6 +187,46 @@ function MainPage() {
 
                 {/* Container ends */}
             </div>
+
+            <Modal className="ModalWithdraw" isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} >
+                <div className="headingModalWithdraw" >Balance</div>
+
+
+                <div className="modalWithdraw__details" >
+                    <img src={modalLogo} alt="" />
+                    <div className="modalWithdraw__details__info">
+                        <div className="modalWithdraw__details__info__bnb">
+                            {userBnb} <span className="info__bnb" >BNB</span>
+                        </div>
+                        <div className="modalWithdraw__details__info__usd">
+                            ~{userUsd} <span className="info__usd" >USD</span>
+                        </div>
+                    </div>
+                </div>
+               
+               <div className="ModalWithdraw__buttons">
+                   <div className="ModalWithdraw__buttons__deposit">
+                        deposit
+                   </div>
+                     
+                    <div className="ModalWithdraw__buttons__withdraw">
+                        withdraw
+                    </div>
+
+               </div>
+            </Modal>
+
+            {/* link pop up */}
+            <Modal className="linkModal" isOpen={linkPopUp} onRequestClose={() => setLinkPopUp(false)} >
+                    <div className="linkModal__link">
+                        {link}
+                    </div>
+
+                    <div className="linkModal__copyLink" onClick={() => {navigator.clipboard.writeText(link)}} >
+                        <img className="linkModal__copyLink__image" src={copySvg} alt=""/>
+                        <div className="linkModal__copyLink__copy">copy</div>
+                    </div>
+            </Modal>
             {/* MainPage ends */}
         </div>
     )

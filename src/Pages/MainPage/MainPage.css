@@ -19,6 +19,7 @@
 
 .ellipseMain {
     margin-top: 46px;
+    margin-right: 20px;
     width: 132px;
     height: 132px;
     border-radius: 100px;
@@ -170,9 +171,12 @@
     flex: 1;
     border-radius: 15px;
     justify-content: space-between;
+    margin-right: 36px;
 
 }
-
+.currencies{
+    margin-right: 38px;
+}
 .rightContainer__configureMsg {
     margin-top: 11px;
 }
@@ -206,7 +210,7 @@
     margin: 5px 10px;
     border-radius: 50px;
     background-color: #FFFFFF;
-    width: 78%;
+    width: 75%;
     height: 30px;
     text-align: center;
     font-family: 'Thabit', monospace;
@@ -268,4 +272,140 @@
     font-family: 'Thabit', monospace;
     cursor: pointer;
 
+}
+
+.ModalWithdraw{
+    
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    background: #005662;
+    border-radius: 30px;
+    width: 383px;
+    Height: 385px;
+    outline-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 20px;
+}
+.modalWithdraw__details{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+
+.modalWithdraw__details__info{
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+    font-family: 'Thabit', monospace;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.ModalWithdraw__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Thabit', monospace;
+ 
+
+}
+
+.ModalWithdraw__buttons__deposit{
+    background: #4FB3BF;
+    border-radius: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 29px;
+    width: 141px;
+    height: 55px;
+    cursor: pointer;
+}
+.ModalWithdraw__buttons__withdraw{
+    background: #4FB3BF;
+    border-radius: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 29px;
+    width: 141px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.headingModalWithdraw{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 63px;
+    text-align: center;
+    font-family: 'Thabit', monospace;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.linkModal{
+    background: #005662;
+    outline-style: none;
+    backdrop-filter: blur(4px);
+    border-radius: 15px;
+    width: 788px;
+    height: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    padding: 0px 20px;
+    
+}
+.linkModal__link{
+    flex: 1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 45px;
+    text-align: center;
+    font-family: 'Thabit', monospace;
+    color: #FFFFFF;
+    max-width: 650px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.linkModal__copyLink{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.linkModal__copyLink__copy{
+    font-family: 'Thabit', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
 }
