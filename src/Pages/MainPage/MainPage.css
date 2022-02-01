@@ -174,9 +174,11 @@
     margin-right: 36px;
 
 }
-.currencies{
+
+.currencies {
     margin-right: 38px;
 }
+
 .rightContainer__configureMsg {
     margin-top: 11px;
 }
@@ -274,8 +276,8 @@
 
 }
 
-.ModalWithdraw{
-    
+.ModalWithdraw {
+
     position: absolute;
     top: 20%;
     left: 38%;
@@ -290,14 +292,15 @@
     align-items: center;
     padding: 24px 20px;
 }
-.modalWithdraw__details{
+
+.modalWithdraw__details {
     display: flex;
     align-items: center;
     justify-content: start;
     width: 100%;
 }
 
-.modalWithdraw__details__info{
+.modalWithdraw__details__info {
     display: flex;
     flex-direction: column;
     font-style: normal;
@@ -310,32 +313,17 @@
     margin-left: 20px;
 }
 
-.ModalWithdraw__buttons{
+.ModalWithdraw__buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     font-family: 'Thabit', monospace;
- 
+
 
 }
 
-.ModalWithdraw__buttons__deposit{
-    background: #4FB3BF;
-    border-radius: 15px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 29px;
-    width: 141px;
-    height: 55px;
-    cursor: pointer;
-}
-.ModalWithdraw__buttons__withdraw{
+.ModalWithdraw__buttons__deposit {
     background: #4FB3BF;
     border-radius: 15px;
     font-style: normal;
@@ -351,7 +339,23 @@
     cursor: pointer;
 }
 
-.headingModalWithdraw{
+.ModalWithdraw__buttons__withdraw {
+    background: #4FB3BF;
+    border-radius: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 29px;
+    width: 141px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.headingModalWithdraw {
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -362,7 +366,7 @@
     margin-top: 20px;
 }
 
-.linkModal{
+.linkModal {
     background: #005662;
     outline-style: none;
     backdrop-filter: blur(4px);
@@ -376,9 +380,10 @@
     top: 35%;
     left: 25%;
     padding: 0px 20px;
-    
+
 }
-.linkModal__link{
+
+.linkModal__link {
     flex: 1;
     font-style: normal;
     font-weight: bold;
@@ -394,13 +399,13 @@
 
 }
 
-.linkModal__copyLink{
+.linkModal__copyLink {
     display: flex;
     flex-direction: column;
     cursor: pointer;
 }
 
-.linkModal__copyLink__copy{
+.linkModal__copyLink__copy {
     font-family: 'Thabit', monospace;
     font-style: normal;
     font-weight: bold;

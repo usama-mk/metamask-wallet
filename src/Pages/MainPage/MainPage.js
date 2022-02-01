@@ -177,7 +177,7 @@ function MainPage() {
                         </div>
 
                         <div className="rightContainer__send">
-                            <div className="rightContainer__send__button" onClick={()=> setLinkPopUp(true)} >Send</div>
+                            <div className="rightContainer__send__button" onClick={() => setLinkPopUp(true)} >Send</div>
                         </div>
                     </div>
                 </div>
@@ -203,29 +203,29 @@ function MainPage() {
                         </div>
                     </div>
                 </div>
-               
-               <div className="ModalWithdraw__buttons">
-                   <div className="ModalWithdraw__buttons__deposit">
+
+                <div className="ModalWithdraw__buttons">
+                    <div className="ModalWithdraw__buttons__deposit">
                         deposit
                    </div>
-                     
+
                     <div className="ModalWithdraw__buttons__withdraw">
                         withdraw
                     </div>
 
-               </div>
+                </div>
             </Modal>
 
             {/* link pop up */}
             <Modal className="linkModal" isOpen={linkPopUp} onRequestClose={() => setLinkPopUp(false)} >
-                    <div className="linkModal__link">
-                        {link}
-                    </div>
+                <div className="linkModal__link">
+                    {link}
+                </div>
 
-                    <div className="linkModal__copyLink" onClick={() => {navigator.clipboard.writeText(link)}} >
-                        <img className="linkModal__copyLink__image" src={copySvg} alt=""/>
-                        <div className="linkModal__copyLink__copy">copy</div>
-                    </div>
+                <div className="linkModal__copyLink" onClick={() => { navigator.clipboard.writeText(link) }} >
+                    <img className="linkModal__copyLink__image" src={copySvg} alt="" />
+                    <div className="linkModal__copyLink__copy">copy</div>
+                </div>
             </Modal>
             {/* MainPage ends */}
         </div>

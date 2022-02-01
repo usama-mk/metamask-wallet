@@ -13,7 +13,8 @@
     margin: 10px 13px;
     padding: 20px;
     /* text-align: center; */
-    font-weight: 900;
+    font-weight: normal;
+    font-family: 'Encode Sans', sans-serif;
     color: #000000;
     position: relative;
 }
@@ -21,11 +22,10 @@
 .sender {
     margin-left: auto;
     background-color: white;
-    font-family: 'Thabit', monospace;
+     
+
 }
-.receiver{
-    font-family: 'Encode Sans', sans-serif;
-}
+
 
 .sender:before {
     content: "";

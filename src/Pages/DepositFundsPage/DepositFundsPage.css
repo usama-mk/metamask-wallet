@@ -211,3 +211,14 @@
 
     }
 }
+
+.content__inputDeposit>input::-webkit-outer-spin-button,
+.content__inputDeposit>input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.content__inputDeposit>input[type=number] {
+    -moz-appearance: textfield;
+}

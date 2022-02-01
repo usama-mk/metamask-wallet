@@ -33,7 +33,7 @@ function DepositFundsPage() {
                 </div>
                 <div className="content__subHeading">0.01 BNB minimum to prevent spam</div>
                 <div className="content__inputDeposit">
-                    <input placeholder="0.01" onChange={handleBnbInput} value={bnbInput} />
+                    <input type="number" placeholder="0.01" onChange={handleBnbInput} value={bnbInput} />
                 </div>
                 <div onClick={handleDeposit} className="content__button" >
                     Deposit
